@@ -1,0 +1,144 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TelephoneNo.aspx.cs" Inherits="TelephoneNumbers.Telno" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+     
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="Content/js/jquery-3.2.1.min.js"></script>
+    <script src="Content/js/bootstrap.min.js"></script>
+
+    <title></title>
+    <style type="text/css">
+        .auto-style3 {
+            width: 100%;
+        }
+        .auto-style8 {
+            height: 51px;
+        }
+        .auto-style15 {
+            width: 166px;
+            height: 170px;
+            float: left;
+        }
+        .auto-style16 {
+            width: 170px;
+            text-align: center;
+        }
+        .auto-style20 {
+            width: 166px;
+            height: 170px;
+            margin-left: 0px;
+        }
+        .auto-style21 {
+            height: 51px;
+            text-align: center;
+        }
+        .auto-style23 {
+            width: 40px;
+        }
+        .auto-style24 {
+            width: 170px;
+            text-align: center;
+            height: 60px;
+        }
+        .auto-style25 {
+            width: 166px;
+            height: 60px;
+            text-align: left;
+        }
+         .telefon {
+            margin: auto;
+            width: 880px;           	        
+            background:#fff; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; 
+	        background-color:#9999FF; 
+	        padding:30px; 
+	        border-radius:15px; 
+	        box-shadow:4px 4px 10px 0 rgba(20,20,20,.6); 	
+    }
+        .auto-style28 {
+            height: 51px;
+            text-align: left;
+            width: 24px;
+        }
+        .auto-style29 {
+            height: 170px;
+        }
+        .auto-style30 {
+            width: 170px;
+            text-align: center;
+            height: 37px;
+        }
+        .auto-style31 {
+            width: 166px;
+            height: 37px;
+            text-align: left;
+        }
+        .auto-style32 {
+            text-align: left;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="telefon">
+
+        <asp:Panel ID="Panel1" runat="server"  Width="100%" Height="700px" BackColor="#9999FF" HorizontalAlign="Justify">
+            <table class="auto-style3">
+                <tr>
+                    <td class="auto-style23" rowspan="5"></td>
+                    <td class="auto-style8" colspan="6"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style16" colspan="2">
+                        <img class="auto-style15" src="image.jpg" />
+                    </td>
+                    <td class="auto-style21">
+                        <asp:Label ID="Label1" runat="server" Font-Size="25pt" ForeColor="#000099" 
+                        Text="TELEFON NUMARALARI" Font-Bold="True"></asp:Label>
+                    </td>
+                    <td class="auto-style21">&nbsp;</td>
+                    <td class="auto-style28">
+                        <img class="auto-style20" src="imagee.jpg" />
+                    </td>
+                    <td class="auto-style32" rowspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style16">
+                        <asp:Label ID="lblTelno" runat="server" Font-Bold="True" Font-Size="12pt" Height="30px" Text="Tel No :" Width="125px"></asp:Label>
+                </td>                 
+                    <td class="auto-style29" colspan="4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <asp:TextBox ID="TextBox" runat="server" ClientIDMode="Static" CssClass="form-control" placeholder="Telefon numarası giriniz..."></asp:TextBox>
+                                    <span class="input-group-btn">
+                                    <asp:Button ID="bttnEnter" runat="server" CssClass="btn btn-primary" Font-Bold="True" ForeColor="White" OnClick="bttnEnter_Click" Text="Ara" Width="71px" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style24" colspan="2"></td>
+                    <td class="auto-style25" colspan="4">
+                        <asp:Label ID="lblOutput" runat="server" Font-Bold="True" Font-Names="Times New Roman" Font-Size="12pt" ForeColor="Maroon" Text="-"></asp:Label>
+                    </td>
+                    <td class="auto-style8" rowspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style30" colspan="2"></td>
+                    <td class="auto-style31" colspan="4"></td>
+                </tr>
+            </table>
+        </asp:Panel>
+
+    </div>
+    </form>
+</body>
+</html>
